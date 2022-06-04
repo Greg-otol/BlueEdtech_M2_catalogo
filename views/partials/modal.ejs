@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <div id="space-modal" class="modal-container">
+    <div class="modal">
+        <button class="close">x</button>
+        <h2 id="msgText">Tem certeza que deseja apagar o livro:</h2>
+        <h2><%= book[0].name %>?</h2>
+        <div class="yesNo">
+          <a id="yes" href="/delete/<%= book[0].id %>">Sim</a>
+          <a id="no">Não</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

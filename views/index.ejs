@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>OtOl_Books</title>
+</head>
+
+<body>
+  <%- include("./partials/header.ejs") %>
+  
+    <% if(message !="" ) { %>
+      <section id="message">
+        <p id="text">
+          <%= message %>
+        </p>
+      </section>
+      <% } %>
+        <main>
+          <section class="cards">
+            <% books.forEach((book)=> { %>
+              <a href="/details/<%= book.id %> ">
+                <div class="card">
+                  <h2>
+                    <%= book.name %>
+                  </h2>
+                  <img src="<%= book.image %>" alt="Imagem do Livro" />
+                  <p id="author"><%= book.author %>
+                  </p>
+                </div>
+              </a>
+              <% }) %>
+          </section>
+        </main>
+        <%- include("./partials/footer.ejs") %>
+          <script src="/js/closeModal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <title>Cadastrar novo Livro</title>
+</head>
+
+<body>
+    <%- include("./partials/header.ejs") %>
+    <main id="register">
+        <section id="form">
+            <div class="container">
+                <div class="ebook">
+                    <img src="/img/ebook.png" alt="ebook">
+                </div>
+                <form class="itens" action="create" method="post">
+                    <h2>Cadastrar Livro</h2>
+                    <input id="name" type="text" name="name" placeholder="Nome do Livro" required />
+                    <input id="imgage" type="text" name="image" placeholder="Link da Imagem" required />
+                    <textarea id="synopsis" type="text" name="synopsis" cols="30" rows="3" placeholder="Sinopse"
+                        required></textarea>
+                    <input id="author" type="text" name="author" placeholder="Autor" required />
+                    <button id="btnCadastrar" >Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>

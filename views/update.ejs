@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/logo.png" />
+  <title>Editar Livro</title>
+</head>
+
+<body>
+  <%- include("./partials/header.ejs") %>
+    <main id="register">
+      <section id="form">
+        <div class="container">
+          <div class="ebook">
+            <img src="/img/ebook.png" alt="ebook">
+          </div>
+          <form class="itens" action="/update/<%=book.id %>" method="post">
+            <h2>Editar Livro</h2>
+            <input id="nome" type="text" name="name" placeholder="Nome do Livro" value="<%=book.name %>" required/>
+            <input id="imgagem" type="text" name="image" placeholder="Link da Imagem" value="<%=book.image %>" required/>
+            <textarea id="descricao" type="text" name="synopsis" cols="30" rows="3" placeholder="Sinopse" required><%=book.synopsis %></textarea>
+            <input id="altura" type="text" name="author" placeholder="Autor" value="<%=book.author %>" required/>
+            <button id="btnCadastrar" type="submit">Atualizar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>
