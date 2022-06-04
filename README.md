@@ -21,6 +21,9 @@ Express
 
 Nodemon
 
+No Projeto Catálogo, foi implantado o CRUD em memória local, onde podemos visualizar, cadastrar atualizar e apagar os itens do catálogo.
+Também foi complementado com caixas de mensagem automática informando o status das operações realizadas.
+
 
 <div style="display: flex;" style="gap: 10;">
 
