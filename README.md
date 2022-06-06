@@ -1,6 +1,6 @@
 # Catálogo
 
-Catálogo - Projeto 3 do módulo 2 BlueEdtech
+Catálogo - Projeto 3 do módulo 2 BlueEdtech.
 
 
 Para a correta execução do projeto em IDE, é necessário a instalação das dependências localizadas no arquivo "package.json". 
